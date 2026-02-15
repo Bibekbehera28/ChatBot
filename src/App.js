@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import ChatBot from './components/ChatBot'; // import your chatbot
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* Navbar with glassmorphism theme - wrapped in site-container for consistent width */}
+      <div className="site-container">
+        <Navbar title="ChatBot" aboutText="About Us" />
+      </div>
+
+      {/* Consistent site container for all content */}
+      <div className="site-container my-3">
+        <Routes>
+          <Route path="/" element={<ChatBot />} />   {/* Home route shows chatbot */}
+          <Route path="/about" element={<About />} /> {/* About route */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
