@@ -3,7 +3,6 @@ export default function About() {
     <div className="container about-container">
       <h1 className="my-3">About Us</h1>
       <div className="accordion" id="accordionExample">
-        
         <div className="accordion-item about-accordion-item">
           <h2 className="accordion-header">
             <button
@@ -17,9 +16,16 @@ export default function About() {
               <strong>Our Mission</strong>
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
             <div className="accordion-body">
-              Empowering Text, One Tool at a Time. At Text Utils, our mission is to simplify and supercharge your text editing experience...
+              Building smarter conversations, one message at a time. Our mission
+              for the ChatBot project is to provide an intuitive, reliable
+              assistant that helps users get answers fast, automate routine
+              tasks, and enrich their interaction with AI.
             </div>
           </div>
         </div>
@@ -37,9 +43,17 @@ export default function About() {
               <strong>What We Offer</strong>
             </button>
           </h2>
-          <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div
+            id="collapseTwo"
+            className="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
             <div className="accordion-body">
-              Smart Utilities for Smarter Text. Text Utils provides a suite of powerful features including case conversion, whitespace trimming...
+              A conversational AI designed for engagement and productivity.
+              ChatBot offers natural language understanding, context-aware
+              replies, customizable workflows, and seamless integration into
+              your web interface so users can ask questions, get
+              recommendations, or perform actions without leaving the page.
             </div>
           </div>
         </div>
@@ -57,9 +71,16 @@ export default function About() {
               <strong>Why Choose Us</strong>
             </button>
           </h2>
-          <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div
+            id="collapseThree"
+            className="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
             <div className="accordion-body">
-              We focus on performance and simplicity. Text Utils is lightweight, responsive, and built with user experience in mind...
+              You can count on us for responsiveness, privacy, and ease of use.
+              The ChatBot is lightweight, fast-loading, and built using React so
+              it adapts to your needs, with a clear focus on delivering helpful,
+              human-like interactions while keeping your data safe.
             </div>
           </div>
         </div>
